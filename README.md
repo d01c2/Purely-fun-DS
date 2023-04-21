@@ -9,4 +9,4 @@
 ## Reading List
 - ["Real World OCaml"](https://www.cambridge.org/core/books/real-world-ocaml-functional-programming-for-the-masses/052E4BCCB09D56A0FE875DD81B1ED571)
 - ["Purely Functional Data Structures"](https://www.amazon.com/Purely-Functional-Data-Structures-Okasaki/dp/0521663504)
-- ["쉽게 배우는 자료구조 with 자바"](https://product.kyobobook.co.kr/detail/S000001743851)
+- ["쉽게 배우는 자료구조 with 파이썬"](https://product.kyobobook.co.kr/detail/S000001743850)
