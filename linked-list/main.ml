@@ -1,5 +1,4 @@
 exception EMPTY
-exception SUBSCRIPT
 
 module type STACK = sig
   type 'a stack
@@ -25,7 +24,7 @@ module BuiltinListStack : STACK = struct
 
   let rec update (s, i, x) =
     match s with
-    | [] -> raise SUBSCRIPT
+    | [] -> raise EMPTY
     | hd :: tl -> if i = 0 then x :: tl else hd :: update (tl, i - 1, x)
 end
 
@@ -41,7 +40,7 @@ module CustomStack : STACK = struct
 
   let rec update (s, i, x) =
     match s with
-    | Nil -> raise SUBSCRIPT
+    | Nil -> raise EMPTY
     | Cons (hd, tl) ->
         if i = 0 then Cons (x, tl) else Cons (hd, update (tl, i - 1, x))
 end
